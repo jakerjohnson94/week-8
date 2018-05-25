@@ -1,0 +1,109 @@
+:root{
+ --button-background-gray: rgb(240, 239, 239);
+}
+
+
+.cell {
+  width: 35px;
+  height: 35px;
+  font-size: 1em;
+  border: .1em solid rgb(206, 204, 204);
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+
+}
+span{
+
+  left: 0;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+}
+.row {
+  display: flex;
+  position: relative;
+  margin: 0;
+}
+
+#boardWrapper {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#output {
+  position: absolute;
+  background-color: rgba(240, 239, 239, 0.904);
+  z-index: 1;
+  top: -10px;
+  width: 500px;
+  height: 200px;
+  visibility: hidden;
+}
+
+.cell-type-0 {
+  color: transparent;
+}
+
+.cell-type-1 {
+  color: red;
+}
+
+.cell-type-2 {
+  color: blue;
+}
+
+.cell-type-3 {
+  color: green;
+}
+
+.cell-type-4 {
+  color: blueviolet;
+}
+
+.cell-type-5 {
+  color: orange;
+}
+
+.cell-type-6 {
+  color: pink;
+}
+
+.cell-type-X {
+  color: transparent;
+  background-image: url(pics/dissaprovingKanye.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.rightClicked {
+  z-index: 2;
+  background-image: unset;
+  background: url(pics/coolKanye.png);
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--button-background-gray)
+}
+
+div {
+  text-align: center;
+}
+
+button {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--button-background-gray);
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
